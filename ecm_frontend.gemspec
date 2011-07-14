@@ -6,5 +6,5 @@ Gem::Specification.new do |s|
   s.summary = "Insert EcmFrontend summary."
   s.description = "Insert EcmFrontend description."
   s.files = Dir["{app,lib,config}/**/*"] + ["MIT-LICENSE", "Rakefile", "Gemfile", "README.rdoc"]
-  s.version = "0.0.1"
+  s.version = "0.0.7"
 end
