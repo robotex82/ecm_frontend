@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe EcmFrontend do
+describe Ecm::Frontend do
   it "should be valid" do
-    EcmFrontend.should be_a(Module)
+    Ecm::Frontend.should be_a(Module)
   end
 end
