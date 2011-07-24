@@ -7,9 +7,13 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-
-<%= render 'frontend/flash' %>
-<%= yield %>
-
+  <div class="container">    
+    <nav>
+      <%= render_navigation %>
+    </nav>
+    
+    <%= render 'frontend/flash' %>
+    <%= yield %>
+  </div>
 </body>
 </html>
