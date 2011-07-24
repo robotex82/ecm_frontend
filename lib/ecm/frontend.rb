@@ -1,3 +1,5 @@
+require 'simple_navigation'
+
 module Ecm
   module Frontend
     class Engine < Rails::Engine
