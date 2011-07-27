@@ -1,4 +1,8 @@
 Dummy::Application.routes.draw do
+    get 'terms_of_service', :to => 'home#terms_of_service'
+
+    get 'imprint', :to => 'home#imprint'
+
   root :to => 'home#index'
 
   get "home/index"
