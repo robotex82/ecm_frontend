@@ -27,7 +27,7 @@ module Ecm
         end
         
         def generate_simple_navigation_config
-          template "config_navigation.rb", "config/navigation.rb"
+          generate("ecm:frontend:simple_navigation")
         end
       end
     end
