@@ -3,10 +3,14 @@ require 'rails/generators/migration'
 module Ecm
   module Frontend
     module Generators
-      class InstallGenerator < Rails::Generators::Base
-        desc "Removed index.html and generates navigation."
+      class ControllerGenerator < Rails::Generators::Base
+        desc "Generates the frontend controller"
              
-        source_root File.expand_path('../templates', __FILE__)
+        source_root File.expand_path('../../../../../../', __FILE__)
+        
+        def generate_controller
+          template "app/controllers/frontend_controller.rb", "app/controllers/frontend_controller.rb"
+        end  
         
 #        def generate_home_controller
 #          options = " --controller-specs=false --no-helper"
@@ -20,14 +24,6 @@ module Ecm
 #        def generate_root_routes
 #          route "root :to => 'home#index'"
 #        end
-        
-        def generate_remove_index
-          remove_file 'public/index.html'
-        end
-        
-        def generate_simple_navigation_config
-          generate("ecm:frontend:simple_navigation")
-        end
       end
     end
   end

@@ -5,9 +5,7 @@ module Ecm
     module Generators
       class LegalGenerator < Rails::Generators::Base
         desc "Generates views for Home#imprint and Home#terms_of_service"
-             
-        source_root File.expand_path('../../../../../../public/', __FILE__)
-        
+
         def generate_imprint
           generate "ecm:core:root_level_action", "Home", "imprint"
         end      

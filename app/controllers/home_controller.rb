@@ -1,4 +1,4 @@
-class HomeController < Ecm::FrontendController
+class HomeController < FrontendController
   def index
   end
 
