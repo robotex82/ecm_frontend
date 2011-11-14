@@ -1,0 +1,6 @@
+en:
+  named_routes_path:
+    home: "home"
+  # resources:
+  #   posts: "Posts"   
+

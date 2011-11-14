@@ -6,10 +6,14 @@ module Ecm
       class ControllerGenerator < Rails::Generators::Base
         desc "Generates the frontend controller"
              
-        source_root File.expand_path('../../../../../../', __FILE__)
+        source_root File.expand_path('../templates', __FILE__)
         
-        def generate_controller
-          template "app/controllers/frontend_controller.rb", "app/controllers/frontend_controller.rb"
+        def generate_frontend_controller
+          template "frontend_controller.rb", "app/controllers/frontend_controller.rb"
+        end  
+
+        def generate_home_controller
+          template "home_controller.rb", "app/controllers/home_controller.rb"
         end  
         
 #        def generate_home_controller

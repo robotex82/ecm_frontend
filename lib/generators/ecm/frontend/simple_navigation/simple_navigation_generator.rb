@@ -5,7 +5,11 @@ module Ecm
         source_root File.expand_path('../templates', __FILE__)
         
         def generate_config
-          template "config_navigation.rb", "config/navigation.rb"
+          template "navigation.rb", "config/navigation.rb"
+        end
+        
+        def generate_locales
+          template "navigation.en.yml", "config/locales/navigation.en.yml"
         end
       end
     end

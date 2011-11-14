@@ -12,3 +12,4 @@ gem "rspec-rails", ">= 2.0.0.beta"
 
 gem 'ecm_core', :git => 'git://github.com/robotex82/ecm_core.git'
 gem "simple-navigation"
+gem 'i18n_routing'

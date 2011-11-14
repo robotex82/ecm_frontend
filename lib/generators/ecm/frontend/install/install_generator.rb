@@ -8,25 +8,32 @@ module Ecm
              
         source_root File.expand_path('../templates', __FILE__)
         
-#        def generate_home_controller
-#          options = " --controller-specs=false --no-helper"
-#          generate("controller", "Home", "index", options)
-#        end
-#        
-#        def generate_controller_parent
-#          gsub_file "app/controllers/home_controller.rb", /ApplicationController/, 'Ecm::FrontendController'
-#        end
-#        
-#        def generate_root_routes
-#          route "root :to => 'home#index'"
-#        end
-        
         def generate_remove_index
           remove_file 'public/index.html'
         end
         
-        def generate_simple_navigation_config
+        def generate_assets
+          generate("ecm:frontend:assets")
+        end
+        
+        def generate_controller
+          generate("ecm:frontend:controller")
+        end
+        
+        def generate_views
+          generate("ecm:frontend:views")
+        end
+        
+        def generate_simple_navigation
           generate("ecm:frontend:simple_navigation")
+        end
+        
+#        def generate_internationalization
+#          generate("ecm:frontend:internationalization")
+#        end        
+        
+        def generate_routes
+          generate("ecm:frontend:routes")
         end
       end
     end

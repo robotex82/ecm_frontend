@@ -1,2 +1,0 @@
-module Ecm::FrontendHelper
-end
