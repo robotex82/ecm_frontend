@@ -12,6 +12,10 @@ module Ecm
           copy_file "frontend.html.erb", "app/views/layouts/frontend.html.erb"
         end
         
+        def generate_home_index
+          copy_file "index.html.erb", "app/views/home/index.html.erb"
+        end
+        
         def generate_frontend_partials
           copy_file "_stylesheets.html.erb", "app/views/frontend/_stylesheets.html.erb"
           copy_file "_header.html.erb", "app/views/frontend/_header.html.erb"         
