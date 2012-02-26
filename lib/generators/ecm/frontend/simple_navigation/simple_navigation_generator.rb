@@ -10,6 +10,7 @@ module Ecm
         
         def generate_locales
           template "navigation.en.yml", "config/locales/navigation.en.yml"
+          template "navigation.de.yml", "config/locales/navigation.de.yml"
         end
       end
     end

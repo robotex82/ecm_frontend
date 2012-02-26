@@ -4,10 +4,8 @@ module Ecm
   module Frontend
     module Generators
       class InstallGenerator < Rails::Generators::Base
-        desc "Removed index.html and generates navigation."
-             
-        source_root File.expand_path('../templates', __FILE__)
-        
+        desc "Removes index.html and generates the frontend."
+       
         def generate_remove_index
           remove_file 'public/index.html'
         end
@@ -28,9 +26,9 @@ module Ecm
           generate("ecm:frontend:simple_navigation")
         end
         
-#        def generate_internationalization
-#          generate("ecm:frontend:internationalization")
-#        end        
+        def generate_locales
+          generate("ecm:frontend:locales")
+        end        
         
         def generate_routes
           generate("ecm:frontend:routes")

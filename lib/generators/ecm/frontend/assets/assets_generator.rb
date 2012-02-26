@@ -13,7 +13,7 @@ module Ecm
           copy_file "content.css", "public/stylesheets/frontend/content.css"
           copy_file "footer.css", "public/stylesheets/frontend/footer.css"  
           copy_file "header.css", "public/stylesheets/frontend/header.css"
-          copy_file "main_navigation.css", "public/stylesheets/frontend/main_navigation.css"   
+          copy_file "main-navigation.css", "public/stylesheets/frontend/main-navigation.css"   
         end      
       end
     end

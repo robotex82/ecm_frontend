@@ -14,9 +14,9 @@ module Ecm
           end
         end  
         
-        def generate_locales
-          template "routes.en.yml", "config/locales/routes.en.yml"
-        end 
+#        def generate_locales
+#          template "routes.en.yml", "config/locales/routes.en.yml"
+#        end 
       end
     end
   end

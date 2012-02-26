@@ -22,11 +22,7 @@ module Ecm
           copy_file "_flash.html.erb", "app/views/frontend/_flash.html.erb"
           copy_file "_main_navigation.html.erb", "app/views/frontend/_main_navigation.html.erb"
           copy_file "_footer.html.erb", "app/views/frontend/_footer.html.erb"          
-        end
-
-        def generate_assets
-          generate "ecm:frontend:assets"
-        end   
+        end 
       end
     end
   end
