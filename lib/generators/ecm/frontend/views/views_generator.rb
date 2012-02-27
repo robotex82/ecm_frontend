@@ -19,7 +19,7 @@ module Ecm
         def generate_frontend_partials
           copy_file "_stylesheets.html.erb", "app/views/frontend/_stylesheets.html.erb"
           copy_file "_header.html.erb", "app/views/frontend/_header.html.erb"         
-          copy_file "_flash.html.erb", "app/views/frontend/_flash.html.erb"
+          copy_file "_flash_messages.html.erb", "app/views/frontend/_flash_messages.html.erb"
           copy_file "_main_navigation.html.erb", "app/views/frontend/_main_navigation.html.erb"
           copy_file "_footer.html.erb", "app/views/frontend/_footer.html.erb"          
         end 
